@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans TC',Arial,sans-serif;font-size:10pt;color:#1A1A2E;background:#fff;}
+.page{width:210mm;min-height:297mm;padding:14mm 12mm 12mm;page-break-after:always;position:relative;}
+.top-bar{background:#1A1A2E;margin:-14mm -12mm 8mm;padding:10mm 14mm 8mm;border-left:5mm solid #C0392B;}
+.top-bar h1{color:#fff;font-size:18pt;font-weight:900;margin-bottom:2px;}
+.top-bar p{color:#aaa;font-size:9pt;}
+.cover-title{color:#C0392B;font-size:36pt;font-weight:900;margin:0;}
+.cover-sub{color:#F0B429;font-size:18pt;font-weight:700;margin:4px 0 8px;}
+.cover-meta{color:#aaa;font-size:10pt;}
+.info-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8mm 0;}
+.info-box{background:#F5F5F5;border-radius:4px;padding:6px 8px;}
+.info-box .lbl{color:#C0392B;font-size:8pt;font-weight:700;margin-bottom:2px;}
+.info-box .val{font-size:9pt;font-weight:700;color:#1A1A2E;}
+.timeline{margin:4mm 0;}
+.tl-row{display:flex;align-items:baseline;gap:8px;padding:3px 0;border-bottom:1px solid #F0F0F0;}
+.tl-time{min-width:14mm;font-weight:700;font-size:9pt;}
+.tl-time.key{color:#C0392B;font-size:10pt;}
+.tl-desc{font-size:9pt;color:#444;}
+.tl-desc.key{color:#1A1A2E;font-weight:700;}
+.race-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:4mm 0;}
+.race-box{border-radius:4px;padding:8px 10px;}
+.race-adult{background:#C0392B;color:#fff;}
+.race-kid{background:#F0B429;color:#1A1A2E;}
+.race-box h3{font-size:10pt;font-weight:700;margin-bottom:3px;}
+.race-box p{font-size:8.5pt;line-height:1.5;}
+h2{font-size:12pt;font-weight:700;margin:5mm 0 2mm;border-left:4px solid #C0392B;padding-left:6px;}
+.group-title{display:flex;justify-content:space-between;align-items:center;padding:5px 10px;border-radius:4px;margin:4mm 0 2mm;color:#fff;font-weight:700;font-size:10pt;}
+.group-title .people{font-size:8pt;font-weight:400;opacity:.9;}
+.phase-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:4mm;}
+.phase-col h4{font-size:8pt;font-weight:700;margin-bottom:3px;}
+.phase-col h4.pre{color:#C0392B;}
+.phase-col h4.exec{color:#F0B429;}
+.phase-col h4.post{color:#1D9E75;}
+.phase-col ul{list-style:none;padding:0;}
+.phase-col li{font-size:8pt;color:#555;padding:1px 0;padding-left:10px;position:relative;}
+.phase-col li::before{content:"·";position:absolute;left:2px;color:#999;}
+hr.div{border:none;border-top:1px solid #eee;margin:3mm 0;}
+.risk-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:4mm 0;}
+.risk-box{background:#F5F5F5;border-radius:4px;padding:8px;}
+.risk-box h4{font-size:9pt;font-weight:700;color:#C0392B;margin-bottom:4px;}
+.risk-box ul{list-style:none;padding:0;}
+.risk-box li{font-size:8pt;color:#555;padding:1px 0;padding-left:10px;position:relative;}
+.risk-box li::before{content:"·";position:absolute;left:2px;color:#aaa;}
+.footer{position:absolute;bottom:8mm;left:12mm;right:12mm;text-align:center;font-size:8pt;color:#aaa;border-top:1px solid #eee;padding-top:3mm;}
+@media print{.page{page-break-after:always;}}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="page">
+  <div style="background:#1A1A2E;margin:-14mm -12mm 8mm;padding:14mm 14mm 12mm;border-left:5mm solid #C0392B;">
+    <div class="cover-title">Run for Love</div>
+    <div class="cover-sub">高雄場 2026｜分工手冊</div>
+    <div class="cover-meta">10/17（六）  苓雅運動園區  NID Run Club × 暴龍運動訓練營 D.B.T</div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-box"><div class="lbl">活動時間</div><div class="val">16:00 正式開始</div></div>
+    <div class="info-box"><div class="lbl">報到時間</div><div class="val">15:00 開放</div></div>
+    <div class="info-box"><div class="lbl">地點</div><div class="val">苓雅運動園區</div></div>
+    <div class="info-box"><div class="lbl">總指揮</div><div class="val">Solo</div></div>
+  </div>
+
+  <h2>當天流程</h2>
+  <div class="timeline">
+    <div class="tl-row"><span class="tl-time">13:00</span><span class="tl-desc">工作人員 + 廠商進場布置</span></div>
+    <div class="tl-row"><span class="tl-time key">15:00</span><span class="tl-desc key">報到・物資發放・捐衣開始</span></div>
+    <div class="tl-row"><span class="tl-time">15:30</span><span class="tl-desc">大合照</span></div>
+    <div class="tl-row"><span class="tl-time">15:40</span><span class="tl-desc">開幕式・致詞</span></div>
+    <div class="tl-row"><span class="tl-time">15:50</span><span class="tl-desc">分組熱身（NID帶大人、暴龍帶小孩，同時進行）</span></div>
+    <div class="tl-row"><span class="tl-time key">16:00</span><span class="tl-desc key">正式比賽開始（大人組與小孩組同時進行）</span></div>
+    <div class="tl-row"><span class="tl-time">18:00</span><span class="tl-desc">頒獎・抽獎</span></div>
+    <div class="tl-row"><span class="tl-time">18:20</span><span class="tl-desc">自由交流・拍照</span></div>
+    <div class="tl-row"><span class="tl-time">18:40</span><span class="tl-desc">捐衣成果公布・結語</span></div>
+    <div class="tl-row"><span class="tl-time">19:00</span><span class="tl-desc">撤場</span></div>
+  </div>
+
+  <h2>比賽項目</h2>
+  <div class="race-row">
+    <div class="race-box race-adult">
+      <h3>大人組（NID 負責）</h3>
+      <p>6人趣味競賽　/　男女 400M 個人賽　/　6人大隊接力<br>每隊至少一位生理女性</p>
+    </div>
+    <div class="race-box race-kid">
+      <h3>小孩組（暴龍負責）</h3>
+      <p>6人趣味競賽　/　6人大隊接力　/　NBA 體測體驗<br>小孩組不限性別</p>
+    </div>
+  </div>
+
+  <h2>總指揮｜Solo</h2>
+  <p style="font-size:9pt;color:#555;">統籌六大工作組別・賽前確認各組備妥狀況・當天最終決策・對外代表・突發狀況第一線處理</p>
+
+  <div class="footer">Run for Love 高雄場 2026  ·  NID Run Club × 暴龍運動訓練營  ·  分工手冊  1 / 3</div>
+</div>
+
+<!-- PAGE 2: 組別 1-3 -->
+<div class="page">
+  <div class="top-bar"><h1>六大工作組別分工</h1><p>賽前準備  ·  當天執行  ·  賽後收尾</p></div>
+
+  <!-- 廠商組 -->
+  <div class="group-title" style="background:#E67E22;">廠商組 <span class="people">組長：nikki　協助：Jax、石頭</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>確認廠商出席名單（到場 vs 寄商品）</li>
+      <li>確認廠商提供商品與數量</li>
+      <li>規劃桌椅數量、動線與位置</li>
+      <li>製作廠商桌牌</li>
+      <li>確認 NID 給廠商的曝光內容</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>協助廠商 13:00 進場就位</li>
+      <li>確認展示桌位整齊、桌牌放好</li>
+      <li>抽獎商品清點並交比賽組保管</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>協助廠商撤場</li>
+      <li>發出廠商曝光貼文（限動/IG）</li>
+    </ul></div>
+  </div>
+  <hr class="div"/>
+
+  <!-- 報到/捐衣組 -->
+  <div class="group-title" style="background:#1D9E75;">報到 / 捐衣組 <span class="people">組長：宸瑨　協助：阿哲、明儒</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>設計雙軌報到動線，避免人潮卡關</li>
+      <li>準備報到桌與告示標示</li>
+      <li>統一裝袋活動物資</li>
+      <li>制定捐衣驗收標準（九成新，太舊請帶回）</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>15:00 開放報到，發放活動物資</li>
+      <li>引導至捐衣區，驗收品質</li>
+      <li>衣服分類 S～2XL，即時統計件數</li>
+      <li>不合格品請參與者帶回</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>18:40 公布捐衣總件數</li>
+      <li>交接給捐好好捐協會</li>
+    </ul></div>
+  </div>
+  <hr class="div"/>
+
+  <!-- 比賽組 -->
+  <div class="group-title" style="background:#185FA5;">比賽組 <span class="people">大人裁判長：JAX　小孩裁判長：潘廣</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>確認分組名單與賽制流程</li>
+      <li>備妥計時設備、哨子、獎品</li>
+      <li>確認裁判（宸瑨/阿哲/明儒/OA/子弘）</li>
+      <li>安排NBA體測4人、出入管制3人</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>石頭負責倒數響哨（16:00 準時）</li>
+      <li>大人組：趣味賽 / 400M / 大隊接力</li>
+      <li>小孩組：趣味賽 / 大隊接力 / NBA體測</li>
+      <li>18:00 執行頒獎與抽獎</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>整理成績紀錄</li>
+      <li>回收裁判計時設備</li>
+    </ul></div>
+  </div>
+
+  <div class="footer">Run for Love 高雄場 2026  ·  NID Run Club × 暴龍運動訓練營  ·  分工手冊  2 / 3</div>
+</div>
+
+<!-- PAGE 3: 組別 4-6 + 風險 -->
+<div class="page">
+  <div class="top-bar"><h1>六大工作組別分工（續）+ 關鍵風險提醒</h1></div>
+
+  <!-- 器材組 -->
+  <div class="group-title" style="background:#534AB7;">器材組 <span class="people">組長：nikki　協助：潘廣 + 暴龍隊（共8人）</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>確認所有器材清單</li>
+      <li>確認器材進場時間與運送車輛</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>13:00 進場，場佈就定位</li>
+      <li>確認每個項目器材齊全</li>
+      <li>即時補位補缺</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>器材清點回收</li>
+      <li>歸還廠商/機構器材</li>
+    </ul></div>
+  </div>
+  <hr class="div"/>
+
+  <!-- 醫療組 -->
+  <div class="group-title" style="background:#A32D2D;">醫療 / 安全組 <span class="people">組長：JAX　醫護：nikki 負責找一位</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>JAX 設計救護 SOP</li>
+      <li>通知各教練備急救箱（跌倒防範）</li>
+      <li>備降溫用品（中暑防範）</li>
+      <li>備電解質 / 鹽錠 / 能量飲（低血糖防範）</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>醫護全程待命</li>
+      <li>全場巡視，特別注意高溫時段</li>
+      <li>緊急事件啟動 SOP 流程</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>確認無人員遺留場地</li>
+      <li>急救物資清點回收</li>
+    </ul></div>
+  </div>
+  <hr class="div"/>
+
+  <!-- 行銷組 -->
+  <div class="group-title" style="background:#993556;">行銷 / 社群組 <span class="people">組長：nikki　乖魚 + 另一位攝影師</span></div>
+  <div class="phase-row">
+    <div class="phase-col"><h4 class="pre">賽前準備</h4><ul>
+      <li>規劃必拍清單（平面 + 動態）</li>
+      <li>設計文宣小物與主視覺</li>
+      <li>準備運發局貼文草稿</li>
+      <li>確認影片數量與限動計畫</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="exec">當天執行</h4><ul>
+      <li>動態攝影 / 平面攝影全程到位</li>
+      <li>即時發布限時動態</li>
+      <li>拍攝頒獎 / 捐衣成果 / 大合照</li>
+    </ul></div>
+    <div class="phase-col"><h4 class="post">賽後收尾</h4><ul>
+      <li>整理照片 / 影片素材</li>
+      <li>發布活動結果貼文</li>
+      <li>提供運發局曝光素材</li>
+    </ul></div>
+  </div>
+  <hr class="div"/>
+
+  <!-- 風險提醒 -->
+  <div class="group-title" style="background:#C0392B;">關鍵風險提醒</div>
+  <div class="risk-grid">
+    <div class="risk-box"><h4>報到人流控管</h4><ul>
+      <li>雙軌動線避免 15:00 卡關</li>
+      <li>捐衣驗收勿拖延報到</li>
+      <li>15:00–16:00 最密集，需 3 人</li>
+    </ul></div>
+    <div class="risk-box"><h4>大小孩同時進行</h4><ul>
+      <li>人力勿集中單側</li>
+      <li>宸瑨/阿哲/明儒橫跨兩組</li>
+      <li>出入口管制防止混場</li>
+    </ul></div>
+    <div class="risk-box"><h4>10月高雄戶外中暑</h4><ul>
+      <li>備足電解質 / 鹽錠</li>
+      <li>現場備冰袋 / 噴霧降溫</li>
+      <li>醫護全程待命</li>
+    </ul></div>
+    <div class="risk-box"><h4>廠商協調</h4><ul>
+      <li>到場 vs 寄商品分開統計</li>
+      <li>抽獎商品提前清點確認</li>
+    </ul></div>
+    <div class="risk-box"><h4>雨天備案</h4><ul>
+      <li>前一天 23:00 前公告</li>
+      <li>提前確認室內替代場地</li>
+    </ul></div>
+    <div class="risk-box"><h4>器材時間差</h4><ul>
+      <li>13:00 準時進場</li>
+      <li>確保 15:00 前全部就位</li>
+    </ul></div>
+  </div>
+
+  <div class="footer">Run for Love 高雄場 2026  ·  NID Run Club × 暴龍運動訓練營  ·  分工手冊  3 / 3</div>
+</div>
+
+</body>
+</html>
